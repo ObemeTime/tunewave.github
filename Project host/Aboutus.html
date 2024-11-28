@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="icon" href="Logo TuneWave.png" type="image/png">
+    <style>
+        /* Общие стили */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color:#ADD8E6;  
+        }
+
+        /* Стили для шапки и навигации */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #565db3;
+            padding: 10px 20px;
+            color: white;
+            position: relative;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+        }
+
+        nav ul li a:hover {
+            color: #ddd;
+        }
+
+        /* Стили для поисковой строки */
+        .search-bar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-grow: 1;
+            max-width: 400px;
+            margin-left: 20px;
+        }
+
+        .search-bar input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            border-radius: 20px;
+            border: none;
+            font-size: 16px;
+        }
+
+        .search-bar input[type="text"]:focus {
+            outline: none;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .search-bar button {
+            background-color: #fff;
+            border: none;
+            border-radius: 50%;
+            margin-left: -40px;
+            padding: 8px;
+            cursor: pointer;
+        }
+
+        .search-bar button img {
+            width: 20px;
+            height: 20px;
+        }
+
+        /* Стили для сайдбара */
+        .sidebar {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: #111;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+
+        .sidebar a {
+            padding: 10px 15px;
+            text-decoration: none;
+            font-size: 18px;
+            color: white;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .sidebar a:hover {
+            background-color: #575757;
+        }
+
+        .sidebar .closebtn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 30px;
+            color: white;
+        }
+
+        /* Стили для кнопки-гамбургера */
+        .hamburger {
+            font-size: 30px;
+            cursor: pointer;
+            position: absolute;
+            left: 15px;
+            top: 15px;
+            color: white;
+        }
+
+        /* Отступ между логотипом и гамбургером */
+        header h1 {
+            margin-left: 50px; 
+            margin-top: 15px;
+        }
+
+        /* Убираем стандартный стиль ссылок */
+        a {
+            text-decoration: none;
+        }
+
+        /* Секция о компании */
+        .about-us {
+            padding: 40px 20px;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+
+        .about-us h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: #565db3;
+        }
+
+        .about-us p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto 20px auto;
+        }
+
+        .about-container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+    </style>
+</head>
+<body>
+
+<!-- Header с логотипом, навигацией и поисковой строкой -->
+<header>
+    <h1>TuneWave</h1>
+    <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Search...">
+        <button onclick="searchFunction()">
+            <img src="https://cdn-icons-png.flaticon.com/512/54/54481.png" alt="Search">
+        </button>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="#">Sign Up</a></li>
+            <li><a href="#">Log In</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Секция о компании -->
+<section class="about-us">
+    <div class="about-container">
+        <h2>About TuneWave</h2>
+        <p>
+            Welcome to TuneWave, your ultimate destination for discovering and enjoying music from all around the world. 
+            Founded in 2010, TuneWave began as a small team of passionate music lovers with a simple vision – to create a platform 
+            where people from all walks of life could easily find, explore, and enjoy their favorite genres and discover new sounds.
+        </p>
+        <p>
+            Over the years, we have grown into a diverse music streaming service, offering a wide variety of genres including rock, pop, jazz, hip-hop, and classical, 
+            among others. Whether you're a long-time fan of the classics or searching for the latest in experimental sounds, TuneWave provides an unmatched listening experience tailored to your tastes.
+        </p>
+        <p>
+            Our mission is simple – to make music accessible to everyone. With TuneWave, you can create and share playlists, discover trending tracks, and even support emerging artists by giving them a platform to reach new audiences. 
+            We believe that music has the power to bring people together, and our platform is built to make that connection easier than ever before.
+        </p>
+        <p>
+            TuneWave isn’t just about listening – it’s about discovering. Our advanced search features, personalized recommendations, and curated playlists make it easy to find the perfect track for any mood, occasion, or style. 
+            Whether you're at home, at work, or on the go, TuneWave helps you stay connected to the music you love.
+        </p>
+        <p>
+            Join TuneWave today and dive into a world of music like never before. We bring the world’s music to your fingertips!
+        </p>
+    </div>
+</section>
+
+<!-- Кнопка гамбургер для сайдбара -->
+<div class="hamburger" onclick="openSidebar()">&#9776;</div>
+
+
+<div id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeSidebar()">&times;</a>
+    <a href="Index.html">Home</a>
+    <a href="Aboutus.html">About us</a>
+    <a href="Services.html">Services</a>
+    <a href="history.html">History</a>
+    <a href="Playlist.html">Playlist</a>
+    <a href="Support.html">Support</a>
+</div>
+
+<script>
+    // Функция для открытия сайдбара
+    function openSidebar() {
+        document.getElementById("mySidebar").style.width = "250px";
+    }
+
+    // Функция для закрытия сайдбара
+    function closeSidebar() {
+        document.getElementById("mySidebar").style.width = "0";
+    }
+
+    
+    function searchFunction() {
+        let query = document.getElementById("searchInput").value;
+        alert("Вы ищете: " + query);
+      
+    }
+</script>
+
+    
+</body>
+</html>
